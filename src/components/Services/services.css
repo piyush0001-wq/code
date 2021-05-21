@@ -1,0 +1,111 @@
+.Services {
+  height: 100vh;
+  width: 100%;
+  color: #405c5a;
+}
+
+.Services > h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.Services > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Services .service_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.Services .service_box .service01,
+.Services .service_box .service02,
+.Services .service_box .service03,
+.Services .service_box .service04 {
+  margin: 20px 0px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 0 20px 30px #405c5a52;
+          box-shadow: 0 20px 30px #405c5a52;
+}
+
+.Services .service_box .service01 .img,
+.Services .service_box .service02 .img,
+.Services .service_box .service03 .img,
+.Services .service_box .service04 .img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.Services .service_box .service01 h3,
+.Services .service_box .service02 h3,
+.Services .service_box .service03 h3,
+.Services .service_box .service04 h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Services .service_box .service01 p,
+.Services .service_box .service02 p,
+.Services .service_box .service03 p,
+.Services .service_box .service04 p {
+  font-weight: bold;
+}
+
+.Services .service_box .service01 .img {
+  background: url("https://images.squarespace-cdn.com/content/v1/54b9401be4b095413a52aaa8/1447704238396-SQI0OW51UB989XIQ99D5/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFk_H6M1tkD9NpL7mXac0oVSXdFfjxR5AjcLwGSebOiGBsFzzcw3xKxvyC_6CFFG_/German+Shepherd+Illustration+by+DKNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Services .service_box .service02 .img {
+  background: url("https://img.freepik.com/free-vector/cat-dog-cartoon_24640-47224.jpg?size=626&ext=jpg");
+  background-size: cover;
+}
+
+.Services .service_box .service03 .img {
+  background: url("https://www.thesprucepets.com/thmb/YAigo4SlsBMONQ1b1koZDv4bBBQ=/4000x2667/filters:no_upscale():max_bytes(150000):strip_icc()/symptoms-of-fear-in-dogs-1117890_V1-fd6a0b4173164cbbb00f8e5b6f45beb8.png");
+  background-size: cover;
+}
+
+.Services .service_box .service04 .img {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMJVHBBJ80a9efsRdPmuN5b14ZQL0vXo4FqA&usqp=CAU");
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .Services h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .Services p {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
+/*# sourceMappingURL=services.css.map */

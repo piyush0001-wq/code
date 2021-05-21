@@ -1,0 +1,72 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_hero {
+  background: url('https://websitedemos.net/pet-care-04/wp-content/uploads/sites/487/2020/02/hero-01-free-img.jpg');
+  background-size: cover;
+  width: 33%;
+  height: 100vh;
+}
+
+.center_hero {
+  background: url('https://websitedemos.net/pet-care-04/wp-content/uploads/sites/487/2020/02/hero-03-free-img.jpg');
+  background-size: cover;
+  width: 33%;
+  height: 100vh;
+}
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.container p {
+  padding: 10px 40px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #597c7a;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #405c5a;
+}
+
+.right_hero {
+  background: url('https://websitedemos.net/pet-care-04/wp-content/uploads/sites/487/2020/02/hero-05-free-img.jpg');
+  background-size: cover;
+  width: 33%;
+  height: 100vh;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width:600px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .left_hero, .right_hero, .center_hero {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+  }
+  .container {
+    margin-top: 80px;
+  }
+  .container p {
+    padding: 10px 50px;
+  }
+}

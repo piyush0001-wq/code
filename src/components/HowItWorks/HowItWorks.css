@@ -1,0 +1,123 @@
+.HowItWorks {
+  width: 100%;
+  height: 100vh;
+  background: #f3f3f3;
+}
+
+.HowItWorks > h1 {
+  text-align: center;
+  padding: 30px 0;
+  color: #405c5a;
+}
+
+.HowItWorks .content {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.HowItWorks .content .StepsToWork {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.HowItWorks .content .StepsToWork .icons {
+  margin: 0px 0 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.HowItWorks .content .StepsToWork .icons > div h1 {
+  z-index: 11;
+  position: relative;
+  background: #405c5a;
+  color: white;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.HowItWorks .content .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.HowItWorks .content .steps .step1,
+.HowItWorks .content .steps .step2,
+.HowItWorks .content .steps .step3 {
+  margin: 10px 30px;
+  padding: 20px;
+  border-radius: 0 20px 20px 20px;
+  background: white;
+  -webkit-box-shadow: 0 20px 20px rgba(128, 128, 128, 0.171);
+          box-shadow: 0 20px 20px rgba(128, 128, 128, 0.171);
+}
+
+.HowItWorks .content .steps .step1 h3,
+.HowItWorks .content .steps .step2 h3,
+.HowItWorks .content .steps .step3 h3 {
+  font-weight: bold;
+}
+
+.HowItWorks .content .steps .step1 p,
+.HowItWorks .content .steps .step2 p,
+.HowItWorks .content .steps .step3 p {
+  color: #405c5a;
+  font-weight: 600;
+}
+
+.HowItWorks .Hero_img {
+  background: url("https://cdni.iconscout.com/illustration/premium/thumb/pet-doctor-2681442-2239905.png");
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50%;
+  height: 500px;
+}
+
+@media (max-width: 850px) {
+  .content .StepsToWork {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .StepsToWork .icons {
+    margin: 0;
+  }
+  .content .Hero_img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=HowItWorks.css.map */

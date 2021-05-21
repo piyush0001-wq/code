@@ -1,0 +1,43 @@
+.MainPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(245, 245, 245);
+}
+
+.mainPage_content {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.mainPage_content h2 {
+  margin: 20px auto;
+  margin-top: 100px;
+  width: 400px;
+  font-size: 40px;
+}
+
+.mainPage_content p {
+  font-weight: bold;
+  padding: 0 50px;
+}
+
+.mainPage_content .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 150px auto;
+}
+
+.MainPage .photo_grid {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  min-height: 100vh;
+  background: url('../../images//Home\ page.jpeg');
+  background-size: cover;
+}

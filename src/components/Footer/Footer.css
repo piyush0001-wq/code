@@ -1,0 +1,137 @@
+footer {
+  height: 60vh;
+  width: 100%;
+  background: #171717;
+  color: white;
+  position: relative;
+}
+
+footer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+footer .top .line {
+  width: 500px;
+  height: 2px;
+  background: #464646;
+}
+
+footer .top .icon {
+  font-size: 35px;
+}
+
+footer .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .newsletter .left {
+  width: 200px;
+}
+
+footer .newsletter .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #597c7a;
+}
+
+footer .newsletter .input input {
+  outline: none;
+  width: 300px;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+footer .newsletter .right_social_handlers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 220px;
+}
+
+footer .newsletter .right_social_handlers p {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .newsletter .right_social_handlers p:hover {
+  background: #597c7a;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+footer .main_links {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: left;
+}
+
+footer .main_links i {
+  padding-right: 10px;
+}
+
+footer .main_links h3 {
+  color: grey;
+}
+
+footer .main_links .contact {
+  width: 200px;
+}
+
+footer .main_links p:hover {
+  color: #999999;
+  cursor: pointer;
+}
+
+footer .main_links .reach_us div {
+  height: 100px;
+  width: 100px;
+  background: white;
+}
+/*# sourceMappingURL=Footer.css.map */

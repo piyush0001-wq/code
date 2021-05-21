@@ -1,0 +1,84 @@
+.askUs {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ebebeb;
+}
+
+.askUs .form {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 20px;
+}
+
+.askUs .form h2 {
+  margin: 10px 0;
+}
+
+.askUs .form h4 {
+  color: grey;
+  margin: 10px 0;
+}
+
+.askUs .form p {
+  margin: 10px 0;
+  padding-right: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #706e6e;
+}
+
+.askUs .form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.askUs .form .inputs textarea {
+  padding: 10px;
+  margin-top: 50px;
+  width: 50%;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+.askUs .form .inputs input {
+  margin: 30px 0;
+  color: grey;
+  outline: none;
+}
+
+.askUs .form button {
+  width: 20%;
+  margin: 20px 0;
+}
+
+.askUs .hero_image {
+  width: 40%;
+  margin: auto 0;
+}
+
+.askUs .hero_image img {
+  height: 70vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=AskUs.css.map */
