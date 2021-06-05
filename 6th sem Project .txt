@@ -1,0 +1,26 @@
+Primary Color(for all headings) - #09335D
+		- fontstyle - Playfair Display
+
+Secondary Color(contents) - 075988
+
+Buttons Color - #46B2AB
+buttons content color - white
+
+
+
+> Home Page:
+  Navbar color - #04314E
+  Navbar contents color - #DEF0F7  (Login should be bold)
+  
+>Consultation
+  Personal details/pet info color - #09335D
+  placeholder color - #04304E  - 50% opacity
+  placeholder contents - #DEF0F7
+
+>Choose Your Vet vala page
+  background color - #EFF7FB
+  Drop down color - #04304E - opacity 40%
+  boxes color - #04304E - opacity 20%
+
+> Doctors Profile
+  background color - #EFF7FB

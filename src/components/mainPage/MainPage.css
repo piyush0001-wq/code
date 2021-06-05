@@ -18,6 +18,8 @@
   margin-top: 100px;
   width: 400px;
   font-size: 40px;
+  color: #09335D;
+  font-family: Playfair Display;
 }
 
 .mainPage_content p {
@@ -40,4 +42,14 @@
   min-height: 100vh;
   background: url('../../images//Home\ page.jpeg');
   background-size: cover;
+}
+
+@media only screen and (max-width:750px) {
+  .MainPage .photo_grid {
+    display: none;
+  }
+  .mainPage_content {
+    width: 100%;
+    text-align: center;
+  }
 }

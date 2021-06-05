@@ -1,0 +1,56 @@
+.authentication_container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.illustration {
+  height: 800px;
+  background: url('https://www.getillustrations.com/packs/flat-vector-illustrations-for-websites/scenes/_1x/accounts%20_%20smartphone,%20account,%20user,%20profile,%20login_md.png');
+  object-fit: contain;
+  width: 40%;
+}
+
+hr {
+  width: 500px;
+  margin: 5px auto;
+  border: 1px solid red;
+}
+
+.toggle_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.toggle_buttons button {
+  background: transparent;
+  color: red;
+}
+
+.register, .login {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0px auto;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.register input, .login input {
+  outline: none;
+  margin: 10px 0;
+  border: none;
+  /* box-shadow: 0 7px 20px rgb(197, 197, 197); */
+  border: 1px solid gray;
+  width: 300px;
+  padding: 10px 20px;
+}

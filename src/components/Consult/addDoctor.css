@@ -1,0 +1,21 @@
+.addDoctor {
+  height: 90vh;
+  width: 100%;
+}
+
+.addDoctor h1 {
+  text-align: center;
+  padding: 10px;
+  color: gray;
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 15px 10px rgb(122, 122, 122);
+}

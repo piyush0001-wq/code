@@ -1,0 +1,84 @@
+.doctor_card {
+  height: 300px;
+  width: 500px;
+  background: #201B1B;
+  margin: 30px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px #d7dddd;
+}
+
+.contact {
+  text-align: right;
+  padding-right: 5px;
+  border-right: 2px solid #3BB7FF;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 2px solid #3BB7FF;
+}
+
+.image img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.doctor_card hr {
+  border: 1px solid #3BB7FF;
+  position: absolute;
+  top: 205px;
+}
+
+.name {
+  position: relative;
+}
+
+.name h2 {
+  color: white;
+  margin-top: -5px;
+  text-transform: uppercase;
+  background: #201B1B;
+  width: 200px;
+  margin: 0 auto;
+  z-index: 111111111;
+  letter-spacing: 3px;
+}
+
+.name p {
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(141, 141, 141);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.bottom .description {
+  text-transform: capitalize;
+  text-align: left;
+  border-left: 2px solid #3BB7FF;
+  padding-left: 5px;
+}
+
+.bottom button {
+  background: #3BB7FF;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.bottom button:hover {
+  background: #1677af;
+}

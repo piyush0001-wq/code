@@ -2,46 +2,52 @@
   margin: 0;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 .nav-bar {
   max-width: 100%;
-  /* background: lightgray; */
   display: flex;
+  /* background: lightgray; */
+  color: #DEF0F7;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 5px 25px;
+  background: #04314E;
 }
 
 .logo h3 {
   font-size: 35px;
+  color: rgb(252, 252, 252);
   margin: 0;
-}
-
-.logo span {
-  color: red;
+  font-family: Playfair Display;
+  font-weight: normal;
 }
 
 .links {
   margin-left: -15px;
   display: flex;
-  /* background: grey; */
   padding: 0 30px;
 }
 
-.links>h4 {
+.links h4 {
   margin: 10px 15px;
   padding: 5px 10px;
   text-align: center;
+  color: #DEF0F7;
 }
 
 .links h4:hover {
   cursor: pointer;
-  background: #597c7a;
-  color: white;
+  background: #ADD6EB;
+  color: #003f5f;
   transition: 0.3s;
 }
 
 button {
-  background: transparent;
+  background: black;
   outline: none;
   border: none;
   cursor: pointer;
@@ -49,27 +55,52 @@ button {
   font-size: 20px;
 }
 
-.left-bar {
+.open-sidebar {
+  visibility: hidden;
   position: absolute;
-  top: 50px;
-  right: 0;
-  z-index: 1111;
-  height: 90%;
-  /* max-width: 20%; */
-  width: 20%;
-  text-align: center;
-  background: linear-gradient(lightgrey, rgba(255, 255, 255, 0.973));
+  right: 26px;
+  /* top: 16px; */
 }
 
-.left-bar h3 {
-  padding: 10px 0;
-}
-
-.left-bar h3:hover {
-  background: #597c7a;
-  color: white;
-  transition: 0.3s ease-in-out;
+.open-login, .open-sidebar {
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
   cursor: pointer;
+  margin: 10px 0;
+}
+
+.sidebar {
+  visibility: hidden;
+  background: #04314E;
+  position: absolute;
+  right: 0;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidebar p {
+  background: transparent;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar p:hover {
+  background: white;
+  color: black;
 }
 
 @media only screen and (max-width:500px) {
@@ -81,5 +112,14 @@ button {
   }
   .left-bar {
     width: 35%;
+  }
+  .open-sidebar {
+    visibility: visible;
+  }
+  .open-login {
+    visibility: hidden;
+  }
+  .sidebar {
+    visibility: visible;
   }
 }

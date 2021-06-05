@@ -1,0 +1,100 @@
+.adopt_container {
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(243, 243, 243);
+}
+
+.adopt_banner {
+  position: relative;
+  background: url('https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/10/Desktop_PF_V4.jpg') no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+}
+
+.bannerContent h1 {
+  color: white;
+  text-shadow: 0 0 10px black;
+  margin-top: 20px;
+}
+
+.bannerContent p {
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-weight: bold;
+}
+
+.bannerContent button {
+  width: 200px;
+}
+
+.pet_categories {
+  height: 15vh;
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(7, 7, 100);
+  color: white;
+  border-radius: 10px;
+  z-index: 11111;
+}
+
+.searchDog, .searchCat, .findOther, .pet_location {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  justify-content: center;
+  padding: 0 20px;
+  height: 15vh;
+}
+
+.searchDog h3, .searchCat h3 {
+  margin: 0 15px;
+}
+
+.searchDog i, .searchCat i {
+  font-size: 40px;
+}
+
+.pet_location input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 0 20px;
+  height: 15vh;
+}
+
+.pet_location:hover, .searchDog:hover, .searchCat:hover, .findOther:hover {
+  background: rgb(5, 5, 53);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.findOther {
+  width: 25%;
+}
+
+.findOther select {
+  outline: none;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.findOther option {
+  background: rgb(5, 5, 53);
+}

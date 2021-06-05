@@ -8,7 +8,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-::selection {
-  color: white;
-  background: #597c7a;
+::-webkit-scrollbar {
+  display: none;
 }
