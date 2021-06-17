@@ -71,7 +71,7 @@ function Login() {
                 <input type="number" placeholder="Contact Number" name="contact_no" value={contact_no} onChange={(e) => setContact(e.target.value)} /> <br />
                 <input type="password" placeholder="Password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
                 <p className="error">{error}</p>
-                <button type="submit">SignUp</button>
+                <button type="submit" >SignUp</button>
               </form>
             </div>
           )

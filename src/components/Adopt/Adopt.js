@@ -22,12 +22,12 @@ function Adopt() {
   xhr.send();
 
 
-  const [data, setData] = React.useState([]);
+  // const [data, setData] = React.useState([]);
 
-  React.useEffect(() => {
-    fetch('https://api.thedogapi.com/v1/breeds').then((data) =>
-      data.json()).then(dogs => setData(dogs))
-  }, [])
+  // React.useEffect(() => {
+  //   fetch('https://api.thedogapi.com/v1/breeds').then((data) =>
+  //     data.json()).then(dogs => setData(dogs))
+  // }, [])
 
   // console.log(data);
 
