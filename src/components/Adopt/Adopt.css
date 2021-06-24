@@ -43,7 +43,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: rgb(7, 7, 100);
+  background: rgb(6, 6, 71);
   color: white;
   border-radius: 10px;
   z-index: 11111;
@@ -97,4 +97,40 @@
 
 .findOther option {
   background: rgb(5, 5, 53);
+}
+
+.pets {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px;
+  gap: 40px;
+}
+
+.pet_card {
+  border-radius: 20px;
+  padding: 10px;
+  background: rgb(235, 235, 235);
+  border: 1px solid rgb(214, 214, 214);
+}
+
+.pet_card .pet_image {
+  background: url("https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/bt_8r_1_660x450_090419060516.jpg");
+  border-radius: 20px;
+  height: 200px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info h3 {
+  text-transform: uppercase;
+}
+
+.info span {
+  font-weight: bold;
 }

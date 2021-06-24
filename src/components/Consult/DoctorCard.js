@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './DoctorCard.css'
-function DoctorCard() {
+function DoctorCard({ set_consult_doctor_name, set_show_appointment }) {
 
 
   const [doctor, setDoctor] = useState([]);
@@ -11,6 +11,10 @@ function DoctorCard() {
 
   }, [])
 
+  function handleAppointment(doc_name) {
+    set_consult_doctor_name(doc_name);
+    set_show_appointment(true);
+  }
 
   return (
     <div >
@@ -35,7 +39,7 @@ function DoctorCard() {
                 <p>{doc.description}</p>
               </div>
               <div className="appointment">
-                <button >Book Appoinment</button>
+                <button onClick={() => handleAppointment(doc.name)}>Book Appoinment</button>
               </div>
             </div>
           </div>

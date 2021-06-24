@@ -1,18 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import BookAppointment from './BookAppointment';
 import './Consult.css'
 import DoctorCard from './DoctorCard'
 
 
 function Consult() {
 
-  // const [randomUser, setRandomUser] = React.useState([]);
-
-  // React.useEffect(() => {
-  //   fetch('https://randomuser.me/api/?results=2').then((data) =>
-  //     data.json()).then(user => setRandomUser(user.results))
-  // }, [])
-
-  // console.log(randomUser);
+  const [consult_doctor_name, set_consult_doctor_name] = React.useState('');
+  const [show_appointment, set_show_appointment] = useState(false);
+  console.log(consult_doctor_name)
 
   return (
     <div className="consult_container">
@@ -31,25 +27,36 @@ function Consult() {
           <p>Look for clinic with<span>Prime <i class="fas fa-award"></i></span></p>
         </div>
       </div>
-      <div className="filters">
 
-      </div>
 
-      <div className="doctor_info">
-        <DoctorCard />
-        <div className="location_info">
-          <h3>Provide current location to see Dentist near you</h3>
-          <p>You are seeing results from Shivpuri. See results near you</p>
-          <div className="areas">
-            <p>Hsr Layout </p>
-            <p>White field </p>
-            <p>Indiranagar </p>
-            <p>Sarjapur Road </p>
-            <p>Marathahalli</p>
+      {
+        show_appointment ? (
+
+          <BookAppointment consult_doctor_name={consult_doctor_name} set_show_appointment={set_show_appointment} />
+        ) : (
+          <div>
+            <div className="filters">
+
+            </div>
+
+            <div className="doctor_info">
+              <DoctorCard set_consult_doctor_name={set_consult_doctor_name} set_show_appointment={set_show_appointment} />
+              <div className="location_info">
+                <h3>Provide current location to see Dentist near you</h3>
+                <p>You are seeing results from Shivpuri. See results near you</p>
+                <div className="areas">
+                  <p>Hsr Layout </p>
+                  <p>White field </p>
+                  <p>Indiranagar </p>
+                  <p>Sarjapur Road </p>
+                  <p>Marathahalli</p>
+                </div>
+                <button><i class="fas fa-map-marker-alt"></i> Current Location</button>
+              </div>
+            </div>
           </div>
-          <button><i class="fas fa-map-marker-alt"></i> Current Location</button>
-        </div>
-      </div>
+        )
+      }
 
     </div>
   )

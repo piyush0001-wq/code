@@ -11,12 +11,13 @@ function Login() {
   const [contact_no, setContact] = useState('');
   const [city, setCity] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('')
 
   const [login, setLogin] = useState(false)
   const [signUp, setSignUp] = useState(true)
-  const [error, setError] = useState('')
 
   function handleSignUp(e) {
+    console.log("signing up");
     e.preventDefault();
     const postData = {
       name,
@@ -54,25 +55,31 @@ function Login() {
       <div className="main">
         {
           login ? (<div className="login">
-            <form >
+            {/* <form >
 
               <input type="text" placeholder="Email" /> <br />
               <input type="texpassword" placeholder="Password" /> <br />
               <p className="error">{error}</p>
-            </form>
+            </form> */}
             <button type="submit">login</button>
           </div>) : (
             <div className="register">
               <form onSubmit={handleSignUp}>
-                <input type="text" placeholder="Name" name="name" value={name} onChange={(e) => setName(e.target.value)} /> <br />
-                <input type="mail" placeholder="Mail Id" name="mail" value={email} onChange={(e) => setmail(e.target.value)} /> <br />
-                <input type="text" placeholder="Username" name="username" value={username} onChange={(e) => setuserName(e.target.value)} /> <br />
-                <input type="text" placeholder="City" name="city" value={city} onChange={(e) => setCity(e.target.value)} /> <br />
-                <input type="number" placeholder="Contact Number" name="contact_no" value={contact_no} onChange={(e) => setContact(e.target.value)} /> <br />
-                <input type="password" placeholder="Password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} /> <br />
+                <input type="text" placeholder="Name" name="name" value={name} onChange={(e) => setName(e.target.value)} required /> <br />
+
+                <input type="mail" placeholder="Mail Id" name="mail" value={email} onChange={(e) => setmail(e.target.value)} required /> <br />
+
+                <input type="text" placeholder="Username" name="username" value={username} onChange={(e) => setuserName(e.target.value)} required /> <br />
+
+                <input type="text" placeholder="City" name="city" value={city} onChange={(e) => setCity(e.target.value)} required /> <br />
+
+                <input type="number" placeholder="Contact Number" name="contact_no" value={contact_no} onChange={(e) => setContact(e.target.value)} required /> <br />
+
+                <input type="password" placeholder="Password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required /> <br />
+
                 <p className="error">{error}</p>
-                <button type="submit" >SignUp</button>
               </form>
+              <button type="submit" >SignUp</button>
             </div>
           )
         }

@@ -1,0 +1,41 @@
+.bookAppointment {
+  height: 100vh;
+}
+
+.consulted_doctor_name {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.consulted_doctor_name h2 span {
+  padding: 5px 20px;
+  border-radius: 10px;
+  background: #04314E;
+  color: white;
+}
+
+.userAndpet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prsonal_info, .pet_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about_name, .personal_contact {
+  width: 100%;
+}

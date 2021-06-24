@@ -7,6 +7,7 @@ import Modal from '@material-ui/core/Modal';
 import FormControl from '@material-ui/core/FormControl';
 import { Button, FormHelperText, TextField } from '@material-ui/core';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 
 
@@ -45,8 +46,43 @@ function Navigation() {
   const [login, setLogin] = useState(true);
   const [sidebar, setSideBar] = useState(false);
 
+  const [name, setName] = useState('name');
+  const [email, setmail] = useState('');
+  const [username, setuserName] = useState();
+  const [contact_no, setContact] = useState('');
+  const [city, setCity] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('')
 
 
+  function handleSignUp(e) {
+    console.log("signing up");
+    e.preventDefault();
+    const postData = {
+
+      name,
+      username,
+      email,
+
+      contact_no,
+      password
+    }
+    axios.post('https://veterinarysystem.vaishnavib03.repl.co/api/register', postData)
+      .then(response => {
+        console.log(response)
+        console.log(response.data.success)
+        if (response.data.success === true) {
+          alert("signed up!!")
+          setLogin(true)
+        }
+      })
+      .catch(error => {
+        console.log(error)
+        setError("unable to sign up, try again!")
+      })
+
+
+  }
 
   const handleOpen = () => {
     setOpen(true);
@@ -73,14 +109,20 @@ function Navigation() {
           </FormControl>
         ) : (
           <FormControl>
-            <TextField id="filled-basic" type="email" label="Emial" variant="filled" /> <br />
-            <TextField id="filled-basic" type="text" label="User Name" variant="filled" /> <br />
-            <TextField id="filled-basic" type="text" label="City " variant="filled" /> <br />
-            <TextField id="filled-basic" type="number" label="Contact Number" variant="filled" /> <br />
-            <TextField id="filled-basic" type="password" label="Password" variant="filled" /> <br />
+            <TextField id="filled-basic" type="email" label="Emial" variant="filled" value={email} onChange={(e) => setmail(e.target.value)} required /> <br />
+
+            <TextField id="filled-basic" type="text" label="User Name" variant="filled" value={username} onChange={(e) => setuserName(e.target.value)} required /> <br />
+
+            <TextField id="filled-basic" type="text" label="City " variant="filled" value={city} onChange={(e) => setCity(e.target.value)} required /> <br />
+
+            <TextField id="filled-basic" type="number" label="Contact Number" variant="filled" value={contact_no} onChange={(e) => setContact(e.target.value)} required /> <br />
+
+            <TextField id="filled-basic" type="password" label="Password" variant="filled" value={password} onChange={(e) => setPassword(e.target.value)} required /> <br />
+
 
             <FormHelperText id="my-helper-text" style={{ fontWeight: "bold", color: "black" }}>We care about your privacy.</FormHelperText> <br />
-            <Button variant="contained" color="primary" >Sign Up</Button>
+
+            <Button variant="contained" color="primary" onClick={handleSignUp} >Sign Up</Button>
 
           </FormControl>
         )

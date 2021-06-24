@@ -39,10 +39,7 @@ function App() {
           </Route>
 
 
-          <Route path='/login'>
-            <Navigation />
-            <Login />
-          </Route>
+
 
           <Route path='/adopt'>
             <Navigation />

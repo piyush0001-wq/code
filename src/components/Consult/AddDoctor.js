@@ -53,7 +53,7 @@ function AddDoctor() {
 
         <TextField id="standard-basic" label="Contact" type="number" onChange={(e) => set_contact_no(e.target.value)} />
 
-        <TextField id="standard-basic" label="Image " type="text" onChange={(e) => set_image(e.target.value)} />
+        <TextField id="standard-basic" label="Image " type="number" onChange={(e) => set_image(e.target.value)} />
 
         <TextField id="standard-basic" label="Description" onChange={(e) => set_description(e.target.value)} />
 
